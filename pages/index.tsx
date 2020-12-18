@@ -10,7 +10,7 @@ export default function Home() {
       <main className="container mx-auto flex-grow h-full flex items-center justify-center flex-col">
         <p className="text-5xl font-thin">Hello,</p>
         <p className="mt-1 text-5xl font-normal">I'm Bilguun</p>
-        <div className="my-8 font-mono text-lg">
+        <div className="my-12 font-mono text-lg">
           <Link href="https://projects.bilguun.dev">
             <a className="text-emerald-400 underline hover:text-emerald-200">
               Projects

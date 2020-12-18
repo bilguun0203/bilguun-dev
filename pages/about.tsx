@@ -31,7 +31,7 @@ export default function About() {
             hello@bilguun.dev
           </a>
         </p>
-        <div className="my-8 font-mono text-lg md:text-lg">
+        <div className="my-12 font-mono text-lg md:text-lg">
           <Link href="/">
             <a className="text-emerald-400 underline hover:text-emerald-200">
               Back to Homepage
