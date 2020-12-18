@@ -20,8 +20,7 @@ module.exports = {
       yellow: colors.yellow,
     },
     fontFamily: {
-      sans: ['Noto Sans', 'sans-serif'],
-      serif: ['Noto Serif', 'serif'],
+      sans: ['Rubik', 'sans-serif'],
       mono: ['JetBrains Mono', 'monospace'],
     },
   },

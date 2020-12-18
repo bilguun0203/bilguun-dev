@@ -16,7 +16,7 @@ export default function About() {
           <p className="font-bold text-lg">
             • Bachelor of Computer Science (2015-2019) •
           </p>
-          <div className="font-light text-gray-light">
+          <div className="font-light text-gray-dark dark:text-gray-light">
             <p>School of Engineering and Applied Science</p>
             <p>National University of Mongolia</p>
           </div>
@@ -26,14 +26,14 @@ export default function About() {
         <p className="mt-2 font-mono text-lg">
           <a
             href="mailto:hello@bilguun.dev"
-            className="underline text-blue-400 hover:text-blue-200"
+            className="underline text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-200"
           >
             hello@bilguun.dev
           </a>
         </p>
         <div className="my-12 font-mono text-lg md:text-lg">
           <Link href="/">
-            <a className="text-emerald-400 underline hover:text-emerald-200">
+            <a className="text-emerald-600 hover:text-emerald-500 dark:text-emerald-400 dark:hover:text-emerald-200 underline">
               Back to Homepage
             </a>
           </Link>
