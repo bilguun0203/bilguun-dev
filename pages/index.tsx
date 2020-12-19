@@ -12,16 +12,16 @@ export default function Home() {
           Hello,
         </p>
         <p className="mt-1 text-6xl">I'm Bilguun</p>
-        <div className="my-12 font-mono text-lg">
+        <div className="nav-container">
           <Link href="https://projects.bilguun.dev">
-            <a className="text-emerald-600 hover:text-emerald-500 dark:text-emerald-400 dark:hover:text-emerald-200 underline">
-              Projects
+            <a className="nav-link">
+              {'<'} Projects {'>'}
             </a>
           </Link>{' '}
-          <span className="text-base text-gray">/</span>{' '}
+          <span className="nav-sep">/</span>{' '}
           <Link href="/about">
-            <a className="text-emerald-600 hover:text-emerald-500 dark:text-emerald-400 dark:hover:text-emerald-200 underline">
-              About Me
+            <a className="nav-link">
+              {'<'} About Me {'>'}
             </a>
           </Link>
         </div>

@@ -8,6 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/react-fontawesome": "^0.1.13",
+    "@techyonx/pro-brands-svg-icons": "^5.15.0",
+    "@techyonx/pro-regular-svg-icons": "^5.15.0",
     "autoprefixer": "^10.1.0",
     "next": "10.0.3",
     "postcss": "^8.2.1",

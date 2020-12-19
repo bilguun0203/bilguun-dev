@@ -18,6 +18,7 @@ module.exports = {
       blue: colors.blue,
       red: colors.red,
       yellow: colors.yellow,
+      purple: colors.purple,
     },
     fontFamily: {
       sans: ['Rubik', 'sans-serif'],
