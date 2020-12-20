@@ -2,14 +2,17 @@ import Link from 'next/link';
 import HeadElem from '../components/head';
 import Footer from '../components/footer';
 
-export default function Error({ statusCode }) {
+export default function NotFound() {
   return (
     <div className="flex flex-col h-screen text-center">
       <HeadElem />
 
       <main className="container mx-auto flex-grow h-full flex items-center justify-center flex-col">
         <p className="text-6xl font-light text-red-500 dark:text-red-400">
-          {statusCode ? `ERROR ${statusCode}` : 'An error occurred on client'}
+          ERROR 404
+        </p>
+        <p className="text-3xl font-light text-gray-dark dark:text-gray-light">
+          Page Not Found
         </p>
         <div className="nav-container">
           <Link href="/">
@@ -24,8 +27,3 @@ export default function Error({ statusCode }) {
     </div>
   );
 }
-
-Error.getInitialProps = ({ res, err }) => {
-  const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
-  return { statusCode };
-};
