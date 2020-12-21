@@ -13,7 +13,7 @@ export default function Home() {
         </p>
         <p className="mt-1 text-6xl">I'm Bilguun</p>
         <div className="nav-container">
-          <Link href="https://projects.bilguun.dev">
+          <Link href="/projects">
             <a className="nav-link">
               {'<'} Projects {'>'}
             </a>

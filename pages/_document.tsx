@@ -19,14 +19,14 @@ class MyDocument extends Document {
         <body className="font-sans bg-gray-lightest dark:bg-gray-darkest text-gray-darkest dark:text-gray-lightest">
           <Main />
           <NextScript />
-          {process.env.WEBSITE_ANALYTICS_ID
-            ? <script
-            async
-            defer
-            data-website-id={process.env.WEBSITE_ANALYTICS_ID}
-            src="https://analytics.bilguun.dev/umami.js"
-          ></script>
-            : null}
+          {process.env.WEBSITE_ANALYTICS_ID ? (
+            <script
+              async
+              defer
+              data-website-id={process.env.WEBSITE_ANALYTICS_ID}
+              src="https://analytics.bilguun.dev/umami.js"
+            ></script>
+          ) : null}
         </body>
       </Html>
     );
