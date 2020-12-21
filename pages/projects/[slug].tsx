@@ -19,7 +19,7 @@ export default function Project(props) {
           {/* Header command prompt */}
           <div className="font-mono text-left font-bold">
             <p>
-              <span className="text-yellow-500">iam</span> in{' '}
+              <span className="text-yellow-500">λ</span> in{' '}
               <span className="text-blue-500">
                 <span className="hover:underline">
                   <Link href="/">~</Link>

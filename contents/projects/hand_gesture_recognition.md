@@ -1,5 +1,5 @@
 ---
-title: Hand Gesture Recognition
+title: Гарын хэлбэр таних
 slug: hand_gesture_recognition
 keywords: 
 - python
@@ -18,7 +18,7 @@ buttons:
   link: "https://github.com/bilguun0203/hand_gesture_recognition/raw/master/Hand_Gesture_Recognition.pdf"
 ---
 
-Камераар дамжуулан гарын ямар хэлбэр гаргасан буюу хэдэн хуруу гаргасныг Python хэл дээр OpenCV, scikit-learn зэрэг сангуудыг ашиглан таньж, түүнийгээ хялбар тоглоомонд ашиглаж туршсан.
+Камераар дамжуулан гарын ямар хэлбэр гаргасан буюу хэдэн хуруу гаргасныг Python хэл дээр OpenCV, scikit-learn зэрэг сангуудыг ашиглан таньж, түүнийгээ хялбар тоглоомд ашиглаж туршсан.
 
 **Demo Video #1**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/maHPA8VHVEM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
