@@ -140,12 +140,11 @@ export default function Projects(props) {
                 <div className="border-2 border-emerald-500 border-opacity-40 p-5 hover:border-opacity-100 shadow-md hover:shadow-lg transition-all">
                   {/* Title */}
                   <p>
-                    <a
-                      href={'/projects/' + project.slug}
-                      className="text-lg font-bold border-b-2 border-emerald-500 border-opacity-40 hover:border-opacity-100"
-                    >
-                      {project.title}
-                    </a>
+                    <Link href={'/projects/' + project.slug}>
+                      <a className="text-lg font-bold border-b-2 border-emerald-500 border-opacity-40 hover:border-opacity-100">
+                        {project.title}
+                      </a>
+                    </Link>
                   </p>
                   {/* Keywords */}
                   <p className="text-sm text-gray mt-4">
@@ -168,12 +167,11 @@ export default function Projects(props) {
                   </p>
                   {/* Read more */}
                   <p>
-                    <a
-                      href={'/projects/' + project.slug}
-                      className="text-emerald-600 dark:text-emerald-500 hover:underline"
-                    >
-                      Дэлгэрэнгүй {'->'}
-                    </a>
+                    <Link href={'/projects/' + project.slug}>
+                      <a className="text-emerald-600 dark:text-emerald-500 hover:underline">
+                        Дэлгэрэнгүй {'->'}
+                      </a>
+                    </Link>
                   </p>
                 </div>
               </div>
