@@ -1,3 +1,7 @@
+.base-style {
+  @apply flex flex-col h-full text-center bg-gray-lightest dark:bg-gray-darkest text-gray-darkest dark:text-gray-lightest min-h-screen;
+}
+
 .nav-container {
   @apply my-12 font-mono text-lg md:text-lg;
 }

@@ -4,7 +4,7 @@ import Footer from '../components/footer';
 
 export default function About() {
   return (
-    <div className="flex flex-col h-full text-center">
+    <div className="base-style">
       <HeadElem title="About Me" />
 
       <main className="container mx-auto flex-grow h-full flex items-center justify-center flex-col">

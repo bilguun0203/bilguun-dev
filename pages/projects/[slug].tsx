@@ -16,7 +16,7 @@ library.add(faGooglePlay);
 
 export default function Project(props) {
   return (
-    <div className="flex flex-col h-full text-center">
+    <div className="base-style">
       <HeadElem title={'Project - ' + props.project.title} />
 
       <main className="container mx-auto max-w-4xl">

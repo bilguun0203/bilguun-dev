@@ -14,9 +14,9 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html className="dark" lang="en">
+      <Html lang="en">
         <Head></Head>
-        <body className="font-sans bg-gray-lightest dark:bg-gray-darkest text-gray-darkest dark:text-gray-lightest">
+        <body className="font-sans">
           <Main />
           <NextScript />
           {process.env.WEBSITE_ANALYTICS_ID ? (

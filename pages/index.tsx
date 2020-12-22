@@ -4,7 +4,7 @@ import Footer from '../components/footer';
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen text-center">
+    <div className="base-style h-screen">
       <HeadElem />
 
       <main className="container mx-auto flex-grow h-full flex items-center justify-center flex-col">

@@ -3,34 +3,10 @@ import { useState, useEffect } from 'react';
 import HeadElem from '../components/head';
 import Footer from '../components/footer';
 
-// function timeStr() {
-//   const dt = new Date();
-//   let time = '';
-//   if (dt.getHours() < 10) {
-//     time += '0' + dt.getHours();
-//   } else {
-//     time += '' + dt.getHours();
-//   }
-//   time += ':';
-//   if (dt.getMinutes() < 10) {
-//     time += '0' + dt.getMinutes();
-//   } else {
-//     time += '' + dt.getMinutes();
-//   }
-//   time += ':';
-//   if (dt.getSeconds() < 10) {
-//     time += '0' + dt.getSeconds();
-//   } else {
-//     time += '' + dt.getSeconds();
-//   }
-//   return time;
-// }
-
 export default function Projects(props) {
   // const dirs = props.projects.map((p) => p.slug);
   // dirs.push('');
 
-  // const [time, setTime] = useState(timeStr());
   // const [dirIdx, setDirIdx] = useState(0);
   const [cursor, setCursor] = useState('_');
   const [projects, setProjects] = useState(props.projects);
@@ -46,13 +22,6 @@ export default function Projects(props) {
     }, 500);
     return () => clearTimeout(timeout);
   }, [cursor]);
-
-  // useEffect(() => {
-  //   const timeout = setTimeout(() => {
-  //     setTime(timeStr());
-  //   }, 1000);
-  //   return () => clearTimeout(timeout);
-  // }, [time]);
 
   // useEffect(() => {
   //   const timeout = setTimeout(() => {
@@ -76,7 +45,7 @@ export default function Projects(props) {
   }, [keyword]);
 
   return (
-    <div className="flex flex-col h-full text-center">
+    <div className="base-style">
       <HeadElem title="Projects" />
 
       <main className="container mx-auto max-w-4xl">
