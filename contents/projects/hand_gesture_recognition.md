@@ -21,7 +21,11 @@ buttons:
 Камераар дамжуулан гарын ямар хэлбэр гаргасан буюу хэдэн хуруу гаргасныг Python хэл дээр OpenCV, scikit-learn зэрэг сангуудыг ашиглан таньж, түүнийгээ хялбар тоглоомд ашиглаж туршсан.
 
 **Demo Video #1**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/maHPA8VHVEM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="embed-responsive aspect-ratio-16/9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/maHPA8VHVEM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 **Demo Video #2 (Chrome Dino)**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ksz7KERGdmE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="embed-responsive aspect-ratio-16/9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ksz7KERGdmE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

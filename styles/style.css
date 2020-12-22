@@ -85,3 +85,27 @@
 .project-content ol {
   @apply list-decimal
 }
+
+.embed-responsive {
+  @apply relative p-0 overflow-hidden h-0
+}
+
+.embed-responsive .embed-responsive-item {
+    @apply absolute top-0 left-0 bottom-0 h-full w-full
+  }
+
+.aspect-ratio-none {
+  padding-bottom: 0;
+}
+.aspect-ratio-square {
+  padding-bottom: 100%;
+}
+.aspect-ratio-16\/9 {
+  padding-bottom: 56.25%;
+}
+.aspect-ratio-4\/3 {
+  padding-bottom: 75%;
+}
+.aspect-ratio-21\/9 {
+  padding-bottom: 42.86%;
+}
