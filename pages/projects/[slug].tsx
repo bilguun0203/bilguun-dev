@@ -1,9 +1,18 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilePowerpoint } from '@techyonx/pro-regular-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faFileArchive, faFilePowerpoint, faFilePdf, faDatabase } from '@techyonx/pro-regular-svg-icons';
+import { faGithub, faGooglePlay } from '@techyonx/pro-brands-svg-icons';
 import HeadElem from '../../components/head';
 import Footer from '../../components/footer';
 import 'highlight.js/styles/atom-one-dark.css';
+
+library.add(faFileArchive);
+library.add(faFilePdf);
+library.add(faFilePowerpoint);
+library.add(faDatabase);
+library.add(faGithub);
+library.add(faGooglePlay);
 
 export default function Project(props) {
   return (
