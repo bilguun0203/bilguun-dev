@@ -10,7 +10,7 @@ export default function HeadElem(props) {
         content={props.title ? 'Bilguun - ' + props.title : 'Bilguun'}
       />
       <meta name="description" content="Bilguun's personal website" />
-      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
     </Head>
   );
 }
