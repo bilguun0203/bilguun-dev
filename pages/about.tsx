@@ -14,8 +14,15 @@ export default function About() {
 
         <p className="about-header">- WORK EXPERIENCE -</p>
         <div className="about-item">
+          <p className="about-title">Software Engineer</p>
+          <p className="about-year">(2021-*)</p>
+          <div className="about-desc">
+            <p>SendMN NBFI</p>
+          </div>
+        </div>
+        <div className="about-item">
           <p className="about-title">Machine Learning Engineer</p>
-          <p className="about-year">(2019-*)</p>
+          <p className="about-year">(2019-2021)</p>
           <div className="about-desc">
             <p>Onch Data LLC</p>
           </div>
