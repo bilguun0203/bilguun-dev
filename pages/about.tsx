@@ -30,14 +30,6 @@ export default function About() {
 
         <p className="about-header">- EDUCATION -</p>
         <div className="about-item">
-          <p className="about-title">Master of Computer Science</p>
-          <p className="about-year">(2019-*)</p>
-          <div className="about-desc">
-            <p>School of Engineering and Applied Science</p>
-            <p>National University of Mongolia</p>
-          </div>
-        </div>
-        <div className="about-item">
           <p className="about-title">Bachelor of Computer Science</p>
           <p className="about-year">(2015-2019)</p>
           <div className="about-desc">
