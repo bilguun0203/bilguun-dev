@@ -24,7 +24,7 @@ class MyDocument extends Document {
               async
               defer
               data-website-id={process.env.WEBSITE_ANALYTICS_ID}
-              src="https://analytics.bilguun.dev/umami.js"
+              src="https://analytics.bilguun.dev/script.js"
             ></script>
           ) : null}
         </body>
