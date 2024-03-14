@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NavContainer from "../components/NavContainer.astro";
+import NavButton from "../components/NavButton.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+  <div class="base-style h-screen">
+    <main
+      class="container mx-auto flex-grow h-full flex items-center justify-center flex-col"
+    >
+      <p class="text-6xl font-light text-red-500 dark:text-red-400">
+        ERROR 404
+      </p>
+      <p class="text-3xl font-light text-gray-dark dark:text-gray-light">
+        Page Not Found
+      </p>
+      <NavContainer>
+        <NavButton href="/">Back to Homepage</NavButton>
+      </NavContainer>
+    </main>
+    <Footer />
+  </div>
+</Layout>

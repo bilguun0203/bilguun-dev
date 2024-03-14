@@ -1,0 +1,40 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<button
+  onclick="toggleTheme()"
+  class="fixed right-0 top-0 cursor-pointer opacity-60 hover:opacity-100 m-3"
+  aria-label="toggle dark mode"
+>
+  <span
+    class="hover:animate-ping-once absolute w-full h-full right-0 rounded-full bg-blue-500 dark:bg-yellow-500 opacity-0 hover:opacity-40"
+  ></span>
+  <Icon
+    name="eclipse-alt"
+    id="themeTogglerIcon"
+    class="inline text-blue-500 dark:text-yellow-500"
+    size={24}
+  />
+</button>
+<script is:inline data-astro-rerun>
+  function updateTheme() {
+    const theme = window.localStorage.getItem("theme");
+    const defaultTheme = window.matchMedia("(prefers-color-scheme: dark)")
+      .matches
+      ? "dark"
+      : "light";
+    const htmlElem = document.getElementById("html");
+    htmlElem?.classList.remove("dark");
+    htmlElem?.classList.remove("light");
+    htmlElem?.classList.add(theme ?? defaultTheme);
+  }
+  function toggleTheme() {
+    let theme = window.localStorage.getItem("theme");
+    const isLight = theme === "light";
+    theme = isLight ? "dark" : "light";
+    window.localStorage.setItem("theme", theme);
+    updateTheme();
+  }
+  updateTheme();
+</script>

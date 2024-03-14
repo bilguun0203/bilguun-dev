@@ -1,0 +1,16 @@
+---
+export interface Props {
+  title: string;
+  duration: string;
+}
+
+const { title, duration } = Astro.props;
+---
+
+<div class="my-2 font-mono">
+  <p class="font-bold text-lg">{title}</p>
+  <p class="font-bold text-gray text-sm">{duration}</p>
+  <div class="mt-1 font-light text-gray-dark dark:text-gray-light text-lg">
+    <slot />
+  </div>
+</div>
