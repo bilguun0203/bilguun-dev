@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NavContainer from "../components/NavContainer.astro";
+import NavButton from "../components/NavButton.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+  <div class="base-style h-screen">
+    <main
+      class="container mx-auto flex-grow h-full flex items-center justify-center flex-col"
+    >
+      <p class="text-6xl font-light text-gray-dark dark:text-gray-light">
+        Hello,
+      </p>
+      <p class="mt-1 text-6xl">I'm Bilguun</p>
+      <NavContainer>
+        <NavButton href="/projects">Projects</NavButton>
+        <span class="text-base text-gray">/</span>
+        <NavButton href="/about">About Me</NavButton>
+      </NavContainer>
+    </main>
+    <Footer />
+  </div>
+</Layout>

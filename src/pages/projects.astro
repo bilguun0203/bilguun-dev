@@ -1,0 +1,127 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NavContainer from "../components/NavContainer.astro";
+import NavButton from "../components/NavButton.astro";
+import Footer from "../components/Footer.astro";
+import type { Frontmatter } from "../layouts/ProjectLayout.astro";
+const projects = await Astro.glob<Frontmatter>("./projects/*.md");
+---
+
+<Layout title="Projects">
+  <div class="base-style">
+    <main class="container mx-auto max-w-4xl">
+      <div class="mx-4">
+        <p
+          class="text-4xl md:text-6xl font-sans font-light mb-8 mt-10 text-center"
+        >
+          Projects
+        </p>
+
+        {/* Header command prompt */}
+        <div class="font-mono text-left font-bold">
+          <p>
+            <span class="text-yellow-500">λ</span> in
+            <span class="text-blue-700 dark:text-blue-400"
+              ><a href="/" class="hover:underline">~</a>/projects</span
+            >
+          </p>
+          <p>
+            <span class="text-emerald-500 dark:text-emerald-400">
+              {"->"}
+            </span>{" "}
+            ls -l
+            <!-- {
+            keyword !== "" ? (
+              <span>
+                {" "}
+                <span class="text-gray">|</span> grep{" "}
+                <span class="text-yellow-600">"{keyword}"</span>
+              </span>
+            ) : (
+              ""
+            )
+          }
+          {
+            keyword !== "" ? (
+              <span class="text-gray">
+                {" "}
+                (
+                <a
+                  href="#"
+                  class="text-red-700 hover:underline"
+                  onClick={() => setKeyword("")}
+                >
+                  × clear
+                </a>
+                )
+              </span>
+            ) : null
+          }
+          <span>{cursor}</span> -->
+          </p>
+          {
+            /* <p>
+            <span class="text-emerald-400">{'->'}</span> cd{' '}
+            <span class="text-gray">{dirs[dirIdx]}</span>
+            <span>{cursor}</span>
+          </p> */
+          }
+        </div>
+
+        {/* Projects grid */}
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-8 text-left font-mono"
+        >
+          {
+            projects
+              .sort((a, b) =>
+                b.frontmatter.date.localeCompare(a.frontmatter.date)
+              )
+              .map((project) => (
+                <article class="border-2 border-emerald-500 border-opacity-40 p-5 hover:border-opacity-100 shadow-md hover:shadow-lg transition-all">
+                  {/* Title */}
+                  <p>
+                    <a
+                      href={"/projects/" + project.frontmatter.slug}
+                      class="text-gray-darkest dark:text-gray-lightest hover:text-gray-darkest hover:dark:text-gray-lightest hover:no-underline text-lg font-bold border-b-2 border-emerald-500 border-opacity-40 hover:border-opacity-100"
+                    >
+                      {project.frontmatter.title}
+                    </a>
+                  </p>
+                  {/* Keywords */}
+                  <>
+                    <p class="text-sm text-gray mt-4">
+                      > {project.frontmatter.date}
+                    </p>
+                    <p class="text-sm text-gray">
+                      > [{project.frontmatter.keywords.join(", ")}]
+                    </p>
+                  </>
+                  {/* Description */}
+                  <p class="text-base text-gray-dark dark:text-gray-light mt-4 mb-8">
+                    {project.frontmatter.description}
+                  </p>
+                  {/* Read more */}
+                  <p>
+                    <a
+                      href={"/projects/" + project.frontmatter.slug}
+                      class="text-emerald-700 hover:text-emerald-900 dark:text-emerald-400 dark:hover:text-emerald-300 hover:underline"
+                    >
+                      Дэлгэрэнгүй {"->"}
+                    </a>
+                  </p>
+                </article>
+              ))
+          }
+        </div>
+
+        {/* Footer */}
+        <NavContainer>
+          <NavButton href="/">Back to Homepage</NavButton>
+        </NavContainer>
+      </div>
+    </main>
+
+    <Footer />
+  </div>
+</Layout>
