@@ -1,4 +1,5 @@
 ---
+import ViewTransitions from "astro/components/ViewTransitions.astro";
 import "../styles/style.css";
 import "@fontsource/rubik";
 import "@fontsource/rubik/300.css";
@@ -24,7 +25,12 @@ const completeDescription = description
   : "Bilguun's personal website";
 ---
 
-<html lang="en" id="html" class="dark" transition:animate="none">
+<html
+  lang="en"
+  id="html"
+  class="bg-gray-lightest dark:bg-gray-darkest"
+  transition:animate="none"
+>
   <head>
     <meta charset="utf-8" />
     <meta name="favicon" content="favicon.svg" />
@@ -58,8 +64,9 @@ const completeDescription = description
         ""
       )
     }
+    <ViewTransitions />
   </head>
-  <body>
+  <body class="bg-gray-lightest dark:bg-gray-darkest min-h-screen">
     <ThemeToggler />
     <slot />
   </body>
