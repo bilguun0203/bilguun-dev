@@ -5,7 +5,6 @@ import "@fontsource/rubik/300.css";
 import "@fontsource/jetbrains-mono";
 import "@fontsource/jetbrains-mono/700.css";
 import "@fontsource/jetbrains-mono/800.css";
-import { ViewTransitions } from "astro:transitions";
 import ThemeToggler from "../components/ThemeToggler.astro";
 
 export interface Props {
@@ -59,7 +58,6 @@ const completeDescription = description
         ""
       )
     }
-    <ViewTransitions />
   </head>
   <body>
     <ThemeToggler />
