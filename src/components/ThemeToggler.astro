@@ -20,7 +20,7 @@ import { Icon } from "astro-icon/components";
 <script is:inline data-astro-rerun>
   function updateTheme() {
     const theme = window.localStorage.getItem("theme");
-    document.getElementById("html")?.setAttribute("class", theme);
+    document.getElementById("html")?.setAttribute("class", theme ?? "dark");
   }
   function toggleTheme() {
     let theme = window.localStorage.getItem("theme");
