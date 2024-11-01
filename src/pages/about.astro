@@ -1,40 +1,69 @@
 ---
-import Layout from "../layouts/Layout.astro";
 import AboutItem from "../components/AboutItem.astro";
-import NavContainer from "../components/NavContainer.astro";
-import NavButton from "../components/NavButton.astro";
 import Footer from "../components/Footer.astro";
+import NavButton from "../components/NavButton.astro";
+import NavContainer from "../components/NavContainer.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="About">
   <div class="base-style">
     <main
-      class="container mx-auto flex-grow h-full flex items-center justify-center flex-col"
+      class="w-full md:max-w-xl px-4 sm:mx-auto flex-grow h-full flex justify-center flex-col"
     >
-      <p class="text-4xl md:text-6xl font-sans font-light mb-4 mt-10">
+      <p class="text-5xl md:text-6xl font-sans font-light mb-4 mt-10">
         Bilguun Ochirbat
       </p>
 
+      <div class="grid sm:grid-cols-2">
+        <div>
+          <p class="about-header">- EMAIL -</p>
+          <p class="mt-2 font-mono text-lg">
+            <a
+              href="mailto:hello@bilguun.dev"
+              class="link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              hello@bilguun.dev
+            </a>
+          </p>
+        </div>
+        <div>
+          <p class="about-header">- GITHUB -</p>
+          <p class="mt-2 font-mono text-lg">
+            <a
+              href="https://github.com/bilguun0203"
+              class="link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              github.com/bilguun0203
+            </a>
+          </p>
+        </div>
+      </div>
+
       <p class="about-header">- WORK EXPERIENCE -</p>
+      <AboutItem title="CS Lecturer Practitioner" duration="(2024-*)">
+        <p>School of Information Technology and Electronics</p>
+        <p>National University of Mongolia</p>
+      </AboutItem>
       <AboutItem title="AI Engineer" duration="(2024-*)">
         <p>Rookie Systems LLC</p>
-        <p class="text-gray text-sm">
-          /Machine Learning, Computer Vision, Langchain/
-        </p>
+        <p class="text-gray text-sm">/ML, CV, LLMs/</p>
       </AboutItem>
       <AboutItem title="AI Engineer" duration="(2022-2024)">
         <p>Ingenius Solutions LLC</p>
-        <p class="text-gray text-sm">
-          /Machine Learning, Computer Vision, DevOps, Full stack dev./
-        </p>
+        <p class="text-gray text-sm">/ML, CV, Full stack dev./</p>
       </AboutItem>
       <AboutItem title="Software Engineer" duration="(2021-*)">
         <p>SendMN NBFI LLC</p>
         <p class="text-gray text-sm">/Backend & Mobile app development/</p>
       </AboutItem>
-      <AboutItem title="Machine Learning Engineer" duration="(2019-2021)">
+      <AboutItem title="ML Engineer" duration="(2019-2021)">
         <p>Onch Data LLC</p>
-        <p class="text-gray text-sm">/Automated ML tool development/</p>
+        <p class="text-gray text-sm">/ML tool development/</p>
       </AboutItem>
 
       <p class="about-header">- EDUCATION -</p>
@@ -44,6 +73,9 @@ import Footer from "../components/Footer.astro";
       >
         <p>School of Information Technology and Electronics</p>
         <p>National University of Mongolia</p>
+        <p class="text-gray text-sm">
+          (Phoneme based Text-to-Speech Synthesis)
+        </p>
       </AboutItem>
       <AboutItem
         title="Bachelor of Science in Computer Science"
@@ -51,30 +83,9 @@ import Footer from "../components/Footer.astro";
       >
         <p>School of Engineering and Applied Science</p>
         <p>National University of Mongolia</p>
+        <p class="text-gray text-sm">(Smart Speaker (voice assistant))</p>
       </AboutItem>
 
-      <p class="about-header">- EMAIL -</p>
-      <p class="mt-2 font-mono text-lg">
-        <a
-          href="mailto:hello@bilguun.dev"
-          class="link"
-          target="_blank"
-          rel="noreferrer"
-        >
-          hello@bilguun.dev
-        </a>
-      </p>
-      <p class="about-header">- GITHUB -</p>
-      <p class="mt-2 font-mono text-lg">
-        <a
-          href="https://github.com/bilguun0203"
-          class="link"
-          target="_blank"
-          rel="noreferrer"
-        >
-          github.com/bilguun0203
-        </a>
-      </p>
       <NavContainer>
         <NavButton href="/">Back to Homepage</NavButton>
       </NavContainer>

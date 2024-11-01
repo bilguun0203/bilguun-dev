@@ -1,29 +1,24 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import NavContainer from "../components/NavContainer.astro";
-import NavButton from "../components/NavButton.astro";
 import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
   <div class="base-style h-screen">
     <main
-      class="container mx-auto flex-grow h-full flex items-center justify-center flex-col"
+      class="container md:max-w-xl px-4 md:px-0 mx-auto flex-grow h-full flex items-center justify-center flex-col font-mono gap-4"
     >
-      <p class="text-6xl font-light text-gray-dark dark:text-gray-light">
-        Hello,
+      <p class="about-header uppercase">- bilguun.dev -</p>
+      <p>Welcome to my personal webpage!</p>
+      <p>
+        On this domain, I host a range of projects - from development and
+        experimental work to personal interests and spontaneous explorations.
       </p>
-      <p class="mt-1 text-6xl">I'm Bilguun</p>
-      <p
-        class="mt-4 text-xl font-mono font-light tracking-widest text-gray-dark dark:text-gray-light"
-      >
-        ["Software", "AI"] Engineer
+      <p>
+        You can also explore some of my <a href="/projects"
+          >personal projects here</a
+        > or learn more <a href="/about">about me</a>.
       </p>
-      <NavContainer>
-        <NavButton href="/projects">Projects</NavButton>
-        <span class="text-base text-gray">/</span>
-        <NavButton href="/about">About Me</NavButton>
-      </NavContainer>
     </main>
     <Footer />
   </div>

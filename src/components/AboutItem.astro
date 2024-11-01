@@ -8,9 +8,10 @@ const { title, duration } = Astro.props;
 ---
 
 <div class="my-2 font-mono">
-  <p class="font-bold text-lg">{title}</p>
-  <p class="font-bold text-gray text-sm">{duration}</p>
-  <div class="mt-1 font-light text-gray-dark dark:text-gray-light text-lg">
+  <p class="font-bold text-lg">
+    {title}<span class="ml-2 font-bold text-gray text-sm">{duration}</span>
+  </p>
+  <div class="font-light text-gray-dark dark:text-gray-light text-base">
     <slot />
   </div>
 </div>
