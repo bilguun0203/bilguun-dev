@@ -9,9 +9,9 @@ keywords:
 description: "Гүн сургалтын арга ашиглан зурагнаас шагайг илрүүлж таних"
 date: "2018-07-12"
 buttons:
-- name: "Сургалтын зургууд"
+- name: "Өгөгдөл (HF)"
   icon: file-archive
-  link: "https://drive.google.com/open?id=1gHbJDrhKiV7QNNbutQaslljrXL4RgaRj"
+  link: "https://huggingface.co/datasets/bilguun/shagai"
 - name: "Сургасан модель"
   icon: database
   link: "https://drive.google.com/open?id=1jnrvQ2kZFao3F2u9OVMDrrEkysXFgYtS"
