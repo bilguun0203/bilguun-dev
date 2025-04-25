@@ -6,18 +6,16 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <div class="base-style h-screen">
     <main
-      class="container md:max-w-xl px-4 md:px-0 mx-auto flex-grow h-full flex items-center justify-center flex-col font-mono gap-4"
+      class="container mx-auto flex h-full flex-grow flex-col items-start justify-center gap-4 px-4 font-mono md:max-w-xl md:px-0"
     >
-      <p class="about-header uppercase">- bilguun.dev -</p>
-      <p>Welcome to my personal webpage!</p>
+      <p class="about-header"><span>Hello</span>, I'm Bilguun.</p>
+      <ul class="list-none">
+        <li>- CS Lecturer @ NUM</li>
+        <li>- AI Engineer @ Rookie Systems</li>
+      </ul>
       <p>
-        On this domain, I host a range of projects - from development and
-        experimental work to personal interests and spontaneous explorations.
-      </p>
-      <p>
-        You can also explore some of my <a href="/projects"
-          >personal projects here</a
-        > or learn more <a href="/about">about me</a>.
+        You can check out some of my personal <a href="/projects">projects</a>
+        <br />or learn more <a href="/about">about me</a>.
       </p>
     </main>
     <Footer />

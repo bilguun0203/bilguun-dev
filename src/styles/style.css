@@ -1,5 +1,5 @@
 .base-style {
-  @apply flex flex-col h-full text-center bg-gray-lightest dark:bg-gray-darkest text-gray-darkest dark:text-gray-lightest min-h-screen;
+  @apply flex flex-col h-full bg-gray-lightest dark:bg-gray-darkest text-gray-darkest dark:text-gray-lightest min-h-screen;
 }
 
 a {

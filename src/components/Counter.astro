@@ -1,0 +1,39 @@
+<span class="font-mono" id="counter"
+  >0000 0000 0000 0000 0000 0000 0000 0000</span
+>
+
+<script is:inline data-astro-rerun>
+  document.addEventListener("astro:page-load", () => {
+    const arr = new Array(32).fill(0);
+    const unixEpoch = Math.floor(Date.now() / 1000);
+    const binaryString = unixEpoch.toString(2).padStart(32, "0");
+    for (let i = 0; i < 32; i++) {
+      arr[31 - i] = parseInt(binaryString[i]);
+    }
+
+    const counterElem = document.getElementById("counter");
+
+    function increment() {
+      let i = 0;
+      while (i < arr.length && arr[i] === 1) {
+        arr[i] = 0;
+        i++;
+      }
+      if (i < arr.length) {
+        arr[i] = 1;
+      }
+      if (i >= arr.length) {
+        arr.fill(0);
+        i = 0;
+      }
+    }
+
+    setInterval(() => {
+      increment();
+      const counterText = arr.toReversed().join("");
+      const counterTextWithSpaces =
+        counterText.match(/.{1,4}/g)?.join(" ") || "";
+      counterElem.innerHTML = counterTextWithSpaces;
+    }, 1000);
+  });
+</script>

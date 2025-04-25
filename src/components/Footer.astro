@@ -1,8 +1,9 @@
 ---
 import { Icon } from "astro-icon/components";
+import Counter from "./Counter.astro";
 ---
 
-<footer class="my-5 font-mono text-gray-dark dark:text-gray-light">
+<footer class="my-5 text-center font-mono text-gray-dark dark:text-gray-light">
   <p>
     <a
       href="https://github.com/bilguun0203"
@@ -17,5 +18,8 @@ import { Icon } from "astro-icon/components";
       class="text-gray-dark hover:text-gray-darkest dark:text-gray-light dark:hover:text-gray-lightest"
       aria-label="email"><Icon name="envelope" class="inline" /></a
     >
+    <p class="mt-2 text-xs opacity-5 dark:opacity-10">
+      just a counter<br /><Counter />
+    </p>
   </p>
 </footer>
