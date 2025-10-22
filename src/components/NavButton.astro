@@ -6,8 +6,15 @@ export interface Props {
 const { href } = Astro.props;
 ---
 
+<style>
+  @reference "../styles/style.css";
+  a {
+    @apply text-emerald-700 hover:text-emerald-900 hover:underline dark:text-emerald-400 dark:hover:text-emerald-300;
+  }
+</style>
+
 <a
   href={href}
-  class="text-emerald-700 hover:text-emerald-900 dark:text-emerald-400 dark:hover:text-emerald-300 hover:underline"
+  class="text-emerald-700 hover:text-emerald-900 hover:underline dark:text-emerald-400 dark:hover:text-emerald-300"
   >{"< "}<slot />{" >"}</a
 >

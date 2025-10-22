@@ -3,20 +3,24 @@ import { Icon } from "astro-icon/components";
 import Counter from "./Counter.astro";
 ---
 
-<footer class="my-5 text-center font-mono text-gray-dark dark:text-gray-light">
+<style>
+  @reference "../styles/style.css";
+  a {
+    @apply text-gray-dark hover:text-gray-darkest dark:text-gray-light dark:hover:text-gray-lightest no-underline;
+  }
+</style>
+
+<footer class="text-gray-dark dark:text-gray-light my-5 text-center font-mono">
   <p>
     <a
       href="https://github.com/bilguun0203"
-      class="text-gray-dark hover:text-gray-darkest dark:text-gray-light dark:hover:text-gray-lightest"
       target="_blank"
       rel="noreferrer"
       aria-label="github"><Icon name="github" class="inline" /></a
     >
     <span class="text-gray-light dark:text-gray-dark">/</span>
-    <a
-      href="mailto:hello@bilguun.dev"
-      class="text-gray-dark hover:text-gray-darkest dark:text-gray-light dark:hover:text-gray-lightest"
-      aria-label="email"><Icon name="envelope" class="inline" /></a
+    <a href="mailto:hello@bilguun.dev" aria-label="email"
+      ><Icon name="envelope" class="inline" /></a
     >
     <p class="mt-2 text-xs opacity-5 dark:opacity-10">
       just a counter<br /><Counter />

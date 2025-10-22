@@ -6,6 +6,7 @@ import "@fontsource/rubik";
 import "@fontsource/rubik/300.css";
 import { ClientRouter } from "astro:transitions";
 import ThemeToggler from "../components/ThemeToggler.astro";
+import "../styles/global.css";
 import "../styles/style.css";
 
 export interface Props {
@@ -64,7 +65,7 @@ const completeDescription = description ? description : "My digital dust";
     }
     <ClientRouter />
   </head>
-  <body class="min-h-screen bg-gray-lightest dark:bg-gray-darkest">
+  <body class="bg-gray-lightest dark:bg-gray-darkest min-h-screen">
     <ThemeToggler />
     <slot />
   </body>

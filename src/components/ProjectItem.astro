@@ -1,0 +1,50 @@
+---
+import type { MarkdownInstance } from "astro";
+import type { Frontmatter } from "../layouts/ProjectLayout.astro";
+
+export interface Props {
+  project: MarkdownInstance<Frontmatter>;
+}
+
+const { project } = Astro.props;
+---
+
+<style>
+  @reference "../styles/style.css";
+  .project-title {
+    @apply text-gray-darkest hover:text-gray-darkest dark:text-gray-lightest hover:dark:text-gray-lightest border-b-2 border-emerald-500/40 text-lg font-bold hover:border-emerald-500 hover:no-underline;
+  }
+  .project-read-more {
+    @apply text-emerald-700 hover:text-emerald-900 hover:underline dark:text-emerald-400 dark:hover:text-emerald-300;
+  }
+</style>
+
+<article
+  class="border-opacity-40 hover:border-opacity-100 border-2 border-emerald-500 p-5 shadow-md transition-all hover:shadow-lg"
+>
+  {/* Title */}
+  <p>
+    <a href={"/projects/" + project.frontmatter.slug} class="project-title">
+      {project.frontmatter.title}
+    </a>
+  </p>
+  {/* Keywords */}
+  <>
+    <p class="text-gray mt-4 text-sm">
+      > {project.frontmatter.date}
+    </p>
+    <p class="text-gray text-sm">
+      > [{project.frontmatter.keywords.join(", ")}]
+    </p>
+  </>
+  {/* Description */}
+  <p class="text-gray-dark dark:text-gray-light mt-4 mb-8 text-base">
+    {project.frontmatter.description}
+  </p>
+  {/* Read more */}
+  <p>
+    <a href={"/projects/" + project.frontmatter.slug} class="project-read-more">
+      Дэлгэрэнгүй {"->"}
+    </a>
+  </p>
+</article>

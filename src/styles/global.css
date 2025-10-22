@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Custom Colors */
+  --color-gray-darkest: #0a0a0a;
+  --color-gray-dark: #3f3f3f;
+  --color-gray: #787878;
+  --color-gray-light: #b7b7b7;
+  --color-gray-lightest: #eeeeee;
+
+  /* Font Families */
+  --font-sans:
+    "Rubik", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono:
+    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  /* Custom Animations */
+  --animate-ping-once: ping-once 1s cubic-bezier(0, 0, 0.2, 1) forwards;
+
+  /* Keyframes */
+  @keyframes ping-once {
+    75%,
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+}
