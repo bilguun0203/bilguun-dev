@@ -8,9 +8,9 @@ keywords:
 description: "Grapheme-to-Phoneme Conversion for Cyrillic Mongolian Using a Speech Corpus"
 date: "2024-11-27"
 buttons:
-- name: "Өгүүлэл (ICECENG 2024) /to be published/"
+- name: "Өгүүлэл (ICECENG 2024)"
   icon: file-pdf
-  link: "https://link.springer.com/book/9783031889981"
+  link: "https://doi.org/10.1007/978-3-031-88999-8_16"
 - name: "Өгүүлэл (ММТ 2024)"
   icon: file-pdf
   link: "http://mmt.edu.mn/static/upload/old_paper/2024/2024-05-17_180710.544078.pdf#page=72.00"
