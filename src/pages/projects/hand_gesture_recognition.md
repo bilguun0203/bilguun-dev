@@ -2,7 +2,7 @@
 layout: ../../layouts/ProjectLayout.astro
 title: Гарын хэлбэр таних
 slug: hand_gesture_recognition
-keywords: 
+keywords:
 - python
 - computer vision
 - school project
@@ -22,14 +22,10 @@ buttons:
 
 Камераар дамжуулан гарын ямар хэлбэр гаргасан буюу хэдэн хуруу гаргасныг Python хэл дээр OpenCV, scikit-learn зэрэг сангуудыг ашиглан таньж, түүнийгээ хялбар тоглоомд ашиглаж туршсан.
 
-**Demo Video #1**
+#### Demo Video #1
 
-<div class="embed-responsive aspect-ratio-16/9">
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/maHPA8VHVEM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<iframe src="https://www.youtube.com/embed/maHPA8VHVEM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full aspect-video"></iframe>
 
-**Demo Video #2 (Chrome Dino)**
+#### Demo Video #2 (Chrome Dino)
 
-<div class="embed-responsive aspect-ratio-16/9">
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ksz7KERGdmE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<iframe src="https://www.youtube.com/embed/ksz7KERGdmE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full aspect-video"></iframe>

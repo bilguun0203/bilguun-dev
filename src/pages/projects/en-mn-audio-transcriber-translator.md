@@ -22,11 +22,9 @@ buttons:
   link: "https://github.com/bilguun0203/gemma3n-audio-mn"
 ---
 
-\> *Write-Up of the "Google - The Gemma 3n Impact Challenge" hackathon on Kaggle*
+> *Write-Up of the "[Google - The Gemma 3n Impact Challenge](https://www.kaggle.com/competitions/google-gemma-3n-hackathon/overview)" hackathon on Kaggle*
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LayUFbTfEqQ?si=ENcLFBKROqFpkN3G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<br/>
+<iframe src="https://www.youtube.com/embed/LayUFbTfEqQ?si=ENcLFBKROqFpkN3G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full aspect-video"></iframe>
 
 Our team working on an automatic subtitle generator that creates bilingual subtitles for English and Mongolian languages, addressing the critical under representation of Mongolian in AI language models. By fine-tuning Google's Gemma 3n E2B model with LoRA (Low-Rank Adaptation), we are developing solution that operates offline while providing real-time transcription and translation between both languages. Currently, we have only fine-tuned the model; the demo app is still in development.
 
