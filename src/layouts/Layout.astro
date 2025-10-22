@@ -1,12 +1,12 @@
 ---
-import ViewTransitions from "astro/components/ViewTransitions.astro";
-import "../styles/style.css";
-import "@fontsource/rubik";
-import "@fontsource/rubik/300.css";
 import "@fontsource/jetbrains-mono";
 import "@fontsource/jetbrains-mono/700.css";
 import "@fontsource/jetbrains-mono/800.css";
+import "@fontsource/rubik";
+import "@fontsource/rubik/300.css";
+import { ClientRouter } from "astro:transitions";
 import ThemeToggler from "../components/ThemeToggler.astro";
+import "../styles/style.css";
 
 export interface Props {
   title?: string;
@@ -20,9 +20,7 @@ const ANALYTICS_URL = import.meta.env.WEBSITE_ANALYTICS_URL;
 const { title, description, keywords } = Astro.props;
 
 const completeTitle = "Bilguun" + (title ? " - " + title : "");
-const completeDescription = description
-  ? description
-  : "My digital dust";
+const completeDescription = description ? description : "My digital dust";
 ---
 
 <html
@@ -64,9 +62,9 @@ const completeDescription = description
         ""
       )
     }
-    <ViewTransitions />
+    <ClientRouter />
   </head>
-  <body class="bg-gray-lightest dark:bg-gray-darkest min-h-screen">
+  <body class="min-h-screen bg-gray-lightest dark:bg-gray-darkest">
     <ThemeToggler />
     <slot />
   </body>
